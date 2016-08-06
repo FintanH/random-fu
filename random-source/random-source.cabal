@@ -67,7 +67,8 @@ Library
     -- And if they want to get their hands dirty fixing that, altering
     -- this cabal file is hardly any additional effort.
     exposed-modules:    Data.Random.Source.MWC
-    build-depends:      mwc-random
+    build-depends:      mwc-random,
+                        pcg-random
     
   if flag(mtl2)
     build-depends:      mtl == 2.*
